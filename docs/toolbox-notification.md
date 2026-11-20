@@ -75,7 +75,7 @@ Quel que soit le canal, le traitement suit les mêmes étapes :
 5. **Transmission** : le fournisseur envoie le message au système externe (serveur SMTP ou Africa's Talking).
 6. **Résultats** : Toolbox renvoie une liste de `NotificationResult`, un par destinataire.
 
-![Cycle de vie d'une notification](images/notif.png)
+![Cycle de vie d'une notification](images/Notif.png)
 
 ### 2.3 Flux Email et SMS
 
