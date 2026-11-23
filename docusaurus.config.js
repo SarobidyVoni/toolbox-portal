@@ -36,8 +36,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr', 'en'],
   },
 
   presets: [
@@ -85,7 +85,7 @@ const config = {
       navbar: {
         title: 'Toolbox Portal',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Toolbox Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -96,8 +96,7 @@ const config = {
             label: 'Toolbox',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -137,11 +136,7 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              }
             ],
           },
         ],

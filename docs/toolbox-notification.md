@@ -1,3 +1,10 @@
+---
+id: toolbox-notification
+slug: /toolbox-notification
+title: Toolbox Notification
+---
+
+
 # Toolbox Notification
 
 Toolbox Notification est une bibliothèque Java 17 pour Spring Boot 3 qui centralise l'envoi d'emails et de SMS dans vos applications. Un seul point d'entrée, une seule configuration, un résultat clair pour chaque destinataire.
