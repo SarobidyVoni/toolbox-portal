@@ -23,7 +23,7 @@ const config = {
   url: 'https://sarobidyvoni.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.SITE_BASE_URL || '/toolbox-portal/',
+  baseUrl: '/toolbox-portal/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -36,8 +36,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr', 'en'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -85,7 +85,7 @@ const config = {
       navbar: {
         title: 'Toolbox Portal',
         logo: {
-          alt: 'Toolbox Logo',
+          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -96,7 +96,8 @@ const config = {
             label: 'Toolbox',
           },
           {
-            type: 'localeDropdown',
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -136,7 +137,11 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              }
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
             ],
           },
         ],
