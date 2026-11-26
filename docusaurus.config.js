@@ -90,10 +90,38 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            label: 'Notification',
             position: 'left',
-            label: 'Toolbox',
+            items: [
+              {
+                label: 'Introduction',
+                to: '/docs/notification/introduction',
+              },
+              {
+                label: 'Features',
+                to: '/docs/notification/features',
+              },
+              {
+                label: 'Architecture',
+                to: '/docs/notification/architecture',
+              },
+              {
+                label: 'Installation',
+                to: '/docs/notification/installation',
+              },
+              {
+                label: 'Usage',
+                to: '/docs/notification/usage',
+              },
+              {
+                label: 'Results',
+                to: '/docs/notification/results',
+              },
+              {
+                label: 'FAQ',
+                to: '/docs/notification/faq',
+              },
+            ],
           },
           {
             type: 'localeDropdown',

@@ -34,14 +34,16 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Toolbox',
+      label: 'Notification',
       collapsed: false,
       items: [
-        {
-          type: 'doc',
-          id: 'toolbox-notification',
-          label: 'Notification',
-        },
+        'notification/introduction',
+        'notification/features',
+        'notification/architecture',
+        'notification/installation',
+        'notification/usage',
+        'notification/results',
+        'notification/faq',
       ],
     },
   ],
