@@ -12,8 +12,24 @@
 
  Create as many sidebars as you want.
 
- @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
- */
+@type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
+//  */
+// const sidebars = {
+//   tutorialSidebar: [
+//     {
+//       type: 'category',
+//       label: 'Toolbox',
+//       collapsed: false,
+//       items: [
+//         'toolbox-notification',
+//       ],
+//     },
+//   ],
+// };
+
+// export default sidebars;
+
+
 const sidebars = {
   tutorialSidebar: [
     {
@@ -21,7 +37,11 @@ const sidebars = {
       label: 'Toolbox',
       collapsed: false,
       items: [
-        'toolbox-notification',
+        {
+          type: 'doc',
+          id: 'toolbox-notification',
+          label: 'Notification',
+        },
       ],
     },
   ],
