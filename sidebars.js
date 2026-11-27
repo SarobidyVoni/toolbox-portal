@@ -34,15 +34,59 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Notification',
+      label: '🔔 Notification',
       collapsed: false,
       items: [
         'notification/introduction',
-        'notification/features',
-        'notification/architecture',
-        'notification/installation',
-        'notification/usage',
-        'notification/results',
+
+        {
+          type: 'category',
+          label: 'Architecture',
+          collapsed: true,
+          items: [
+            'notification/architecture',
+            'notification/lifecycle',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Configuration',
+          collapsed: true,
+          items: [
+            'notification/configuration/installation',
+            'notification/configuration/email-config',
+            'notification/configuration/sms-config',
+          ],
+        },
+
+       {
+          type: 'category',
+          label: 'Utilisation',
+          collapsed: true,
+          items: [
+            'notification/usage/notification-structure',
+            'notification/usage/email',
+            'notification/usage/sms',
+            'notification/usage/templates',
+            'notification/usage/attachments',
+            'notification/usage/multiple-recipients',
+            'notification/usage/reading-results',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Results & Errors',
+          collapsed: true,
+          items: [
+            'notification/resultats/erreur',
+            'notification/resultats/limite',
+            'notification/resultats/statut',
+          ],
+        },
+
+        'notification/extension',
         'notification/faq',
       ],
     },

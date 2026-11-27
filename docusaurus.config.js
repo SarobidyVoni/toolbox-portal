@@ -82,53 +82,24 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      navbar: {
-        title: 'Toolbox Portal',
-        logo: {
-          alt: 'Toolbox Logo',
-          src: 'img/logo.svg',
+        navbar: {
+          title: 'Toolbox Portal',
+          logo: {
+            alt: 'Toolbox Logo',
+            src: 'img/logo.svg',
+          },
+          items: [
+            {
+              label: '🔔 Notification',
+              to: '/docs/notification/introduction',
+              position: 'left',
+            },
+            {
+              type: 'localeDropdown',
+              position: 'right',
+            },
+          ],
         },
-        items: [
-          {
-            label: 'Notification',
-            position: 'left',
-            items: [
-              {
-                label: 'Introduction',
-                to: '/docs/notification/introduction',
-              },
-              {
-                label: 'Features',
-                to: '/docs/notification/features',
-              },
-              {
-                label: 'Architecture',
-                to: '/docs/notification/architecture',
-              },
-              {
-                label: 'Installation',
-                to: '/docs/notification/installation',
-              },
-              {
-                label: 'Usage',
-                to: '/docs/notification/usage',
-              },
-              {
-                label: 'Results',
-                to: '/docs/notification/results',
-              },
-              {
-                label: 'FAQ',
-                to: '/docs/notification/faq',
-              },
-            ],
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-        ],
-      },
       footer: {
         style: 'dark',
         links: [
